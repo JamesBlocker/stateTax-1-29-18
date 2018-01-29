@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function should take in cost and state and return the total
+
+    function totalCost(cost, state) {
+        
+        //determine state tax percentage
+        var taxRate;
+        
+        
+        switch(state) {
+            case "AL":
+                taxRate = .04;
+                break;
+            case "AK":
+                taxRate = 0;
+                break;
+            case "AZ":
+                taxRate = .056;
+                break;
+            case "CA":
+                taxRate = .075;
+                break;
+            case "CO":
+                taxRate = .029;
+                break;
+            case "CN":
+                taxRate = .0635;
+                break;
+            case "DE":
+                taxRate = 0;
+                break;
+            case "DC":
+                taxRate = .0575;
+                break;
+            case "FL":
+                taxRate = .06;
+                break;
+            case "GA":
+                taxRate = .04;
+                break;
+            case "HI":
+                taxRate = .04;
+                break;
+            case "ID":
+                taxRate = .06;
+                break;
+            case "IL":
+                taxRate = .0625;
+                break;
+            case "IN":
+                taxRate = .07;
+                break;
+            case "IA":
+                taxRate = .06;
+                break;
+            case "KS":
+                taxRate = .065;
+                break;
+            case "KY":
+                taxRate = .06;
+                break;
+            case "LA":
+                taxRate = .04;
+                break;
+            case "ME":
+                taxRate = .055;
+                break;
+            case "MD":
+                taxRate = .06;
+                break;
+            case "MA":
+                taxRate = .065;
+                break;
+            case "MI":
+                taxRate = .06;
+                break;
+            case "MN":
+                taxRate = .0688;
+                break;
+            case "MS":
+                taxRate = .075;
+                break;
+            case "MO":
+                taxRate = .029;
+                break;
+            case "MT":
+                taxRate = 0;
+                break;
+            case "NE":
+                taxRate = .055;
+                break;
+            case "NV":
+                taxRate = .07;
+                break;
+            case "NH":
+                taxRate = 0;
+                break;
+            case "NJ":
+                taxRate = .07;
+                break;
+            case "NM":
+                taxRate = .0513;
+                break;
+            case "NY":
+                taxRate = .04;
+                break;
+            case "NC":
+                taxRate = .0475;
+                break;
+            case "ND":
+                taxRate = .05;
+                break;
+            case "OH":
+                taxRate = 5.75;
+                break;
+            case "OK":
+                taxRate = .045;
+                break;
+            case "OR":
+                taxRate = 0;
+                break;
+            case "PN":
+                taxRate = .06;
+                break;
+            case "PR":
+                taxRate = .06;
+                break;
+            case "RI":
+                taxRate = .07;
+                break;
+            case "SC":
+                taxRate = .06;
+                break;
+            case "SD":
+                taxRate = .04;
+                break;
+            case "TN":
+                taxRate = .07;
+                break;
+            case "TX":
+                taxRate = .065;
+                break;
+            case "UT":
+                taxRate = .0595;
+                break;
+            case "VT":
+                taxRate = .06;
+                break;
+            case "VA":
+                taxRate = .053;
+                break;
+            case "WA":
+                taxRate = .065;
+                break;
+            case "WV":
+                taxRate = .06;
+                break;
+            case "WI":
+                taxRate = .05;
+                break;
+            case "WY":
+                taxRate = .04;
+                break;
+            default:
+                taxRate = .075;
+        }
+        
+        //figure tax total from cost and state rate
+        var taxTotal = cost * taxRate;
+        
+        //add tax to cost
+        var total = cost + taxTotal;
+        
+        //return total
+        
+        return "$" + total;
+        }
+        
+    
+    
+    
+    </script>
+</body>
+</html>
